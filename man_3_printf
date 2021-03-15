@@ -48,6 +48,8 @@ are printed this way: \x, followed by the ASCII code value in hexadecimal (upper
 .PP
 .B r - Prints the reversed string
 .PP
+.B R - Prints the rot13'ed string
+.PP
 .SH RETURN VALUE
 The _printf function returns the number of characters printed (except the null byte used to end strings)
 .PP
