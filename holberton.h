@@ -37,7 +37,12 @@ int _putchar(char);
 int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
 
-
+/**
+ * struct datatype - counts number of digits of a number
+ * @n: string to count digits.
+ *
+ * Return: digit quantity for count.
+ */
 
 typedef struct datatype
 {
