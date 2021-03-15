@@ -63,6 +63,12 @@ int print_hexa_low(va_list list)
 	char hexnum[100];
 	unsigned int decnum = va_arg(list, unsigned int);
 
+	if (decnum == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
 	while (decnum != 0)
 	{
 		rem = decnum % 16;
@@ -95,6 +101,11 @@ int print_hexa_upper(va_list list)
 	char hexnum[100];
 	unsigned int decnum = va_arg(list, unsigned int);
 
+	if (decnum == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (decnum != 0)
 	{
 		rem = decnum % 16;
