@@ -22,7 +22,6 @@ char *change_to_binary(unsigned int k);
 int print_number_uns(unsigned int n);
 int _strlen(char *s);
 void _print_rev_recursion(char *s);
-static unsigned long _pow(unsigned int base, unsigned int exponent);
 
 int print_char(va_list list);
 int print_char_2(va_list list);
