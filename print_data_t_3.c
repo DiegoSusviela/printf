@@ -24,7 +24,9 @@ int print_str_rev(va_list list)
  * Return: % char length for count.
  */
 
+/*
 int print_rot_13(va_list list)
 {
 	return (0);
 }
+*/

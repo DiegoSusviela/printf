@@ -64,7 +64,7 @@ int print_number(int n)
 char *change_to_binary(unsigned int decimalnum)
 {
     int rem, i = 0;
-	char *guardar;
+	char guardar[100];
 
     while (decimalnum != 0)
     {
