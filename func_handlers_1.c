@@ -71,7 +71,7 @@ char *change_to_binary(unsigned int decimalnum)
     {
         rem = decimalnum % 2;
         decimalnum = decimalnum / 2;
-		guardar[i] = decimalnum;
+		guardar[i] = rem;
 		i++;
     }
     return binarynum;

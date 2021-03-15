@@ -55,7 +55,7 @@ int print_int(va_list list)
  * Return: printed number converted.
  */
 
-unsigned int print_to_binar(va_list list)
+int print_to_binar(va_list list)
 {
 	char *n = change_to_binary(va_arg(list, unsigned int));
 	int i = 0;
