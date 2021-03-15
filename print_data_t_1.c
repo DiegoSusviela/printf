@@ -62,6 +62,12 @@ int print_to_binar(va_list list)
 	int i = 0, count = 0;
 	int guardar[100];
 
+	if (decimalnum == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
     while (decimalnum != 0)
     {
         rem = decimalnum % 2;
