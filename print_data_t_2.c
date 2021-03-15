@@ -168,7 +168,7 @@ int print_str_non_print(va_list list)
 				_putchar(hexnum[i]);
 			}
 			i = 0;
-			count += 4;
+			count += 3;
 		}
 		else
 			_putchar(s_aux[cont]);
