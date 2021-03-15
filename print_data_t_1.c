@@ -23,8 +23,10 @@ int print_char(va_list list)
 int print_char_2(va_list list)
 {
 	char *s_aux;
+	char *s_aux_1;
 
 	s_aux = va_arg(list, char*);
+	s_aux_1 = s_aux;
 	if (!s_aux)
 		return (0);
 	while (*s_aux)
@@ -32,7 +34,7 @@ int print_char_2(va_list list)
 		_putchar(*s_aux);
 		s_aux++;
 	}
-	return (_strlen(s_aux));
+	return (_strlen(s_aux_1));
 }
 
 /**
