@@ -81,7 +81,7 @@ int print_p(va_list list)
 	_putchar('0');
 	_putchar('x');
 	count = 2;
-	m = _pow(16, 15); /* 16 ^ 15 */
+	m = _pow(16, 15);
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{
