@@ -136,22 +136,17 @@ int print_hexa_upper(va_list list)
 int print_str_non_print(va_list list)
 {
 	char *s_aux;
-	int rem, decnum, count = 0, i = 0;
+	int rem, decnum, count = 0, i = 0, cont;
 	int hexnum[100];
 
 	s_aux = va_arg(list, char*);
 	if (!s_aux)
 		s_aux = "(null)";
-	while (*s_aux)
+	while (s_aux[cont])
 	{
-		if ((*s_aux > 0 && *s_aux < 32) || (*s_aux >= 127))
+		if ((s_aux[cont] > 0 && s_aux[cont] < 32) || (s_aux[cont] >= 127))
 		{
-			decnum = (int)*s_aux;
-			if (decnum == 0)
-			{
-				_putchar('0');
-				return (1);
-			}
+			decnum = (int)s_aux[cont];
 			while (decnum != 0)
 			{
 				rem = decnum % 16;
@@ -176,8 +171,8 @@ int print_str_non_print(va_list list)
 			i = 0;
 		}
 		else
-			_putchar(*s_aux);
-	s_aux++;
+			_putchar(s_aux[cont]);
+	cont++;
 	}
-	return (strlen(s_aux) + count);
+	return (cont + count);
 }
