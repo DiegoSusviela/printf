@@ -20,6 +20,10 @@ int _printf(const char *format, ...)
 	};
 
 	int indx_type, iter = 0, pos1 = 0, pos2, count = 0;
+
+	if (!format)
+		return (-1);
+
 	va_list list;
 
 	va_start(list, format);
