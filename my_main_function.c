@@ -1,9 +1,11 @@
 #include "holberton.h"
-#include "print_data_t_2.c"
-#include "print_data_t_1.c"
-#include "func_handlers_2.c"
-#include "func_handlers_1.c"
-#include "aux_funcs.c"
+/*
+*#include "print_data_t_2.c"
+*#include "print_data_t_1.c"
+*#include "func_handlers_2.c"
+*#include "func_handlers_1.c"
+*#include "aux_funcs.c"
+*/
 
 
 int _printf(const char *format, ...)
