@@ -21,6 +21,7 @@ int change_to_binary(int k);
 
 int print_number_uns(unsigned int n);
 int _strlen(char *s);
+void _print_rev_recursion(char *s);
 
 int print_char(va_list list);
 int print_char_2(va_list list);
@@ -33,6 +34,8 @@ int print_octal(va_list list);
 int print_hexa_low(va_list list);
 int print_hexa_upper(va_list list);
 int print_str_non_print(va_list list);
+
+int print_str_rev(va_list list);
 
 
 int _putchar(char);

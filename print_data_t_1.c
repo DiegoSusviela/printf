@@ -23,17 +23,17 @@ int print_char(va_list list)
 int print_char_2(va_list list)
 {
 	char *s_aux;
-	int i = 0;
+	int cant = 0;
 
 	s_aux = va_arg(list, char*);
 	if (!s_aux)
 		s_aux = "(null)";
-	while (s_aux[i])
+	while (s_aux[cant])
 	{
-		_putchar(s_aux[i]);
-		i++;
+		_putchar(s_aux[cant]);
+		cant++;
 	}
-	return (i);
+	return (cant);
 }
 
 /**
@@ -74,4 +74,3 @@ int print_percent(va_list list __attribute__((unused)))
 	_putchar('%');
 	return (1);
 }
-
