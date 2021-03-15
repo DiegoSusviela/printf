@@ -37,6 +37,7 @@ int print_str_non_print(va_list list);
 
 int print_str_rev(va_list list);
 int print_rot_13(va_list list);
+int print_p(va_list list);
 
 
 int _putchar(char);
