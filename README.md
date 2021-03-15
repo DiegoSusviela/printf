@@ -1,5 +1,3 @@
-
-
 ## colaboracion del printf
 
 
