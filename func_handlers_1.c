@@ -63,7 +63,6 @@ int print_number(int n)
  */
 char *change_to_binary(unsigned int decimalnum)
 {
-    long binarynum = 0;
     int rem, i = 0;
 	char *guardar;
 
