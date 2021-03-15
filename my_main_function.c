@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 		{"u", print_uns}, {"o", print_octal},
 		{"x", print_hexa_low}, {"X", print_hexa_upper},
 		{"S", print_str_non_print}, {"r", print_str_rev},
-		/*{"R", print_rot_13},*/ {NULL, NULL},
+		{"R", print_rot_13}, {NULL, NULL},
 	};
 
 	int indx_type, iter = 0, pos1 = 0, pos2, count = 0;
