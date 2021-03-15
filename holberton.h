@@ -18,7 +18,9 @@ void print_str(int pos1, int pos2, const char *format);
 void _puts(char *str);
 int print_number(int n);
 int change_to_binary(int k);
+
 int print_number_uns(unsigned int n);
+int _strlen(char *s);
 
 int print_char(va_list list);
 int print_char_2(va_list list);
