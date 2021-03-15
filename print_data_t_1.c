@@ -28,10 +28,9 @@ int print_char_2(va_list list)
 	s_aux = va_arg(list, char*);
 	if (!s_aux)
 		s_aux = "(null)";
-	while (*s_aux)
+	while (s_aux[i])
 	{
-		_putchar(*s_aux);
-		s_aux++;
+		_putchar(s_aux[i]);
 		i++;
 	}
 	return (i);
