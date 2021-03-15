@@ -136,7 +136,7 @@ int print_hexa_upper(va_list list)
 int print_str_non_print(va_list list)
 {
 	char *s_aux;
-	int rem, decnum, count = 0, i = 0, cont;
+	int rem, decnum, i = 0, cont;
 	int hexnum[100];
 
 	s_aux = va_arg(list, char*);
@@ -166,13 +166,13 @@ int print_str_non_print(va_list list)
 			for (; i >= 0; i--)
 			{
 				_putchar(hexnum[i]);
-				count++;
 			}
 			i = 0;
+			cont += 4;
 		}
 		else
 			_putchar(s_aux[cont]);
 	cont++;
 	}
-	return (cont + count);
+	return (cont);
 }
