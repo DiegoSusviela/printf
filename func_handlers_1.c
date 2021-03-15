@@ -74,5 +74,5 @@ char *change_to_binary(unsigned int decimalnum)
 		guardar[i] = rem;
 		i++;
     }
-    return binarynum;
+    return (guardar);
 }
