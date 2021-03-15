@@ -17,7 +17,7 @@ int _printf(const char *format, ...);
 void print_str(int pos1, int pos2, const char *format);
 void _puts(char *str);
 int print_number(int n);
-int change_to_binary(int k);
+char *change_to_binary(unsigned int k);
 
 int print_number_uns(unsigned int n);
 int _strlen(char *s);

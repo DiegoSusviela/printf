@@ -61,11 +61,18 @@ int print_number(int n)
  *
  * Return: binary number
  */
-int change_to_binary(int n)
+char *change_to_binary(unsigned int decimalnum)
 {
-	if (n == 0)
-		return (0);
-	if (n == 1)
-		return (1);
-	return ((n % 2) + 10 * change_to_binary(n / 2));
+    long binarynum = 0;
+    int rem, i = 0;
+	char *guardar;
+
+    while (decimalnum != 0)
+    {
+        rem = decimalnum % 2;
+        decimalnum = decimalnum / 2;
+		guardar[i] = decimalnum;
+		i++;
+    }
+    return binarynum;
 }
