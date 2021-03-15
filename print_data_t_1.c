@@ -23,18 +23,18 @@ int print_char(va_list list)
 int print_char_2(va_list list)
 {
 	char *s_aux;
-	char *s_aux_1;
+	int i = 0;
 
 	s_aux = va_arg(list, char*);
-	s_aux_1 = s_aux;
 	if (!s_aux)
-		return (0);
+		s_aux = '(null)';
 	while (*s_aux)
 	{
 		_putchar(*s_aux);
 		s_aux++;
+		i++;
 	}
-	return (_strlen(s_aux_1));
+	return (i);
 }
 
 /**
