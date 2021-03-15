@@ -38,11 +38,13 @@ int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
 
 /**
- * struct datatype - counts number of digits of a number
- * @n: string to count digits.
+ * struct datatype - imprime
+ * @type: numero a imprimir
+ * @func: un char ahi
  *
- * Return: digit quantity for count.
- */
+* Description: Show a message blablabla
+* Return: Always 0 (Success)
+*/
 
 typedef struct datatype
 {
