@@ -12,6 +12,13 @@ int print_uns(va_list list)
 	return (print_number_uns(va_arg(list, int)));
 }
 
+/**
+ * print_octal - print octal
+ * @list: string to print.
+ *
+ * Return: Calls function that prints any unsigned number.
+ */
+
 int print_octal(va_list list)
 {
 	int i = 0, count = 0;
@@ -37,7 +44,12 @@ int print_octal(va_list list)
 	return (count);
 }
 
-
+/**
+ * print_hexa_low - print hexa lowercase
+ * @list: string to print.
+ *
+ * Return: Calls function that prints any unsigned number.
+ */
 
 int print_hexa_low(va_list list)
 {
@@ -64,6 +76,13 @@ int print_hexa_low(va_list list)
 	return (count);
 }
 
+/**
+ * print_hexa_upper - prints hexa uppercase
+ * @list: string to print.
+ *
+ * Return: Calls function that prints any unsigned number.
+ */
+
 int print_hexa_upper(va_list list)
 {
 	int rem, i = 0, count = 0;
@@ -89,6 +108,13 @@ int print_hexa_upper(va_list list)
 	return (count);
 }
 
+
+/**
+ * print_str_non_print - non print str
+ * @list: string to print.
+ *
+ * Return: Calls function that prints any unsigned number.
+ */
 
 int print_str_non_print(va_list list)
 {
