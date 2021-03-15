@@ -69,21 +69,3 @@ int change_to_binary(int n)
 		return (1);
 	return ((n % 2) + 10 * change_to_binary(n / 2));
 }
-/**
- * print_number_uns - change decimal number to binary
- * @n: string to print.
- *
- * Return: binary number
- */
-
-int print_number_uns(unsigned int n)
-{
-	unsigned int num;
-
-	num = n;
-	if (num / 10 != 0)
-		print_number(num / 10);
-	_putchar('0' + (num % 10));
-
-	return (num_lenght_uns(n));
-}
