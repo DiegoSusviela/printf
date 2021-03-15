@@ -50,28 +50,3 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (count);
 }
-/*
-int main()
-{
-
-    char ch = 'a';
-    char *str;
-    char *str2;
-    str2 = "wopa";
-    str = "Hola";
-	int aux = _printf("A%cB%sC%sD8\n", ch, str, str2);
-	printf ("\n");
-    printf("%d", aux);
-	printf ("\n");
-	int aux2 = _printf("alo98");
-	printf ("\n");
-    printf("%d", aux2);
-	printf ("\n");
-	int aux3 = _printf("aguada%c%s%s", ch, str, str2);
-	printf ("\n");
-    printf("%d", aux3);
-	printf ("\n");
-
-    return (0);
-}
-*/
