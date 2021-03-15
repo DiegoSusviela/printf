@@ -14,7 +14,7 @@ int _putchar(char c)
 }
 
 /**
- * num_length - counts number of digits of a number
+ * num_lenght - counts number of digits of a number
  * @n: string to count digits.
  *
  * Return: digit quantity for count.

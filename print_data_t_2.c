@@ -19,7 +19,7 @@ int print_octal(va_list list)
 	unsigned int n = va_arg(list, unsigned int);
 	unsigned int m = 1, aux, num = 0;
 
-	while(n > 0)
+	while (n > 0)
 	{
 		aux = n % 8;
 		hexnum[i] = aux;
@@ -28,7 +28,7 @@ int print_octal(va_list list)
 		n = n / 8;
 		m = m * 10;
 	}
-	for(i = i - 1; i >= 0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
 		/*printf("%i", hexnum[i]);*/
 		_putchar(hexnum[i] + '0');
@@ -104,7 +104,7 @@ int print_str_non_print(va_list list)
 		if ((*s_aux > 0 && *s_aux < 32) || (*s_aux >= 127))
 		{
 			decnum = (int)*s_aux;
-			while(decnum != 0)
+			while (decnum != 0)
 			{
 				rem = decnum % 16;
 				if (rem < 10)
@@ -117,9 +117,9 @@ int print_str_non_print(va_list list)
 			}
 			_putchar(92);
 			_putchar('x');
-			i = i -1;
-            if (i < 1)
-                _putchar('0');
+			i = i - 1;
+			if (i < 1)
+				_putchar('0');
 			for (; i >= 0; i--)
 			{
 				_putchar(hexnum[i]);
@@ -129,7 +129,7 @@ int print_str_non_print(va_list list)
 		}
 		else
 			_putchar(*s_aux);
-    s_aux++;
+	s_aux++;
 	}
 	return (strlen(s_aux) + count);
 }
