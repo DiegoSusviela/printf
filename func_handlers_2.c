@@ -51,20 +51,3 @@ void _print_rev_recursion(char *s)
 		_putchar(*s);
 	}
 }
-
-/**
- * _pow - calculates an exponent
- * @base: base of exponent
- * @exponent: exponent of number
- *
- * Return: base ^ exponent
- */
-static unsigned long _pow(unsigned int base, unsigned int exponent)
-{
-	unsigned int i;
-	unsigned long ans = base;
-
-	for (i = 1; i < exponent; i++)
-		ans *= base;
-	return (ans);
-}
