@@ -56,7 +56,7 @@ int print_hexa_low(va_list list)
 		i++;
 		decnum = decnum / 16;
 	}
-	for (i = i-1; i >= 0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
 		_putchar(hexnum[i]);
 		count++;
@@ -81,7 +81,7 @@ int print_hexa_upper(va_list list)
 		i++;
 		decnum = decnum / 16;
 	}
-	for (i = i-1; i >= 0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
 		_putchar(hexnum[i]);
 		count++;
