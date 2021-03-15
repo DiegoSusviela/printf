@@ -21,10 +21,10 @@ int _printf(const char *format, ...)
 
 	int indx_type, iter = 0, pos1 = 0, pos2, count = 0;
 
+	va_list list;
+
 	if (format == NULL)
 		return (-1);
-
-	va_list list;
 
 	va_start(list, format);
 
