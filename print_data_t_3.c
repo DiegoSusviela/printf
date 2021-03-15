@@ -75,7 +75,7 @@ int print_rot_13(va_list ap)
 			}
 		if (!f)
 		{
-			_putchar(s[i]);
+			_putchar(s[position]);
 			counter++;
 		}
 		position++;
