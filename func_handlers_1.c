@@ -54,27 +54,3 @@ int print_number(int n)
 
 	return (num_lenght(n));
 }
-
-/**
- * change_to_binary - change decimal number to binary
- * @n: string to print.
- *
- * Return: binary number
- */
-/*
-char *change_to_binary(unsigned int decimalnum)
-{
-    int rem, i = 0;
-	char guardar[100];
-	char *ret = guardar;
-
-    while (decimalnum != 0)
-    {
-        rem = decimalnum % 2;
-        decimalnum = decimalnum / 2;
-		guardar[i] = rem;
-		i++;
-    }
-    return (ret);
-}
-*/

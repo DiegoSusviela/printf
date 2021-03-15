@@ -26,6 +26,12 @@ int print_octal(va_list list)
 	unsigned int n = va_arg(list, unsigned int);
 	unsigned int m = 1, aux, num = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
 	while (n > 0)
 	{
 		aux = n % 8;
