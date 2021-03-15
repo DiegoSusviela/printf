@@ -147,6 +147,11 @@ int print_str_non_print(va_list list)
 		if ((*s_aux > 0 && *s_aux < 32) || (*s_aux >= 127))
 		{
 			decnum = (int)*s_aux;
+			if (decnum == 0)
+			{
+				_putchar('0');
+				return (1);
+			}
 			while (decnum != 0)
 			{
 				rem = decnum % 16;
