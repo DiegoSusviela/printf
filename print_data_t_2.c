@@ -45,10 +45,10 @@ int print_hexa_low(va_list list)
 	char hexnum[100];
 	unsigned int decnum = va_arg(list, unsigned int);
 
-	while(decnum != 0)
+	while (decnum != 0)
 	{
 		rem = decnum % 16;
-		if(rem < 10)
+		if (rem < 10)
 			rem = rem + 48;
 		else
 			rem = rem + 87;
@@ -56,7 +56,7 @@ int print_hexa_low(va_list list)
 		i++;
 		decnum = decnum / 16;
 	}
-	for(i = i-1; i >= 0; i--)
+	for (i = i-1; i >= 0; i--)
 	{
 		_putchar(hexnum[i]);
 		count++;
@@ -70,10 +70,10 @@ int print_hexa_upper(va_list list)
 	char hexnum[100];
 	unsigned int decnum = va_arg(list, unsigned int);
 
-	while(decnum != 0)
+	while (decnum != 0)
 	{
 		rem = decnum % 16;
-		if(rem < 10)
+		if (rem < 10)
 			rem = rem + 48;
 		else
 			rem = rem + 55;
@@ -81,7 +81,7 @@ int print_hexa_upper(va_list list)
 		i++;
 		decnum = decnum / 16;
 	}
-	for(i = i-1; i >= 0; i--)
+	for (i = i-1; i >= 0; i--)
 	{
 		_putchar(hexnum[i]);
 		count++;
@@ -107,7 +107,7 @@ int print_str_non_print(va_list list)
 			while(decnum != 0)
 			{
 				rem = decnum % 16;
-				if(rem < 10)
+				if (rem < 10)
 					rem = rem + 48;
 				else
 					rem = rem + 55;
@@ -120,7 +120,7 @@ int print_str_non_print(va_list list)
 			i = i -1;
             if (i < 1)
                 _putchar('0');
-			for(; i >= 0; i--)
+			for (; i >= 0; i--)
 			{
 				_putchar(hexnum[i]);
 				count++;
