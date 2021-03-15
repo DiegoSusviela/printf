@@ -57,15 +57,24 @@ int print_int(va_list list)
 
 int print_to_binar(va_list list)
 {
-	char *n = change_to_binary(va_arg(list, unsigned int));
-	int i = 0;
+	unsigned int decimalnum = va_arg(list, unsigned int);
+	unsigned int rem;
+	int i = 0, count = 0;
+	int guardar[100];
 
-	while (n)
-	{
-		_putchar(n[i] + '0');
+    while (decimalnum != 0)
+    {
+        rem = decimalnum % 2;
+        decimalnum = decimalnum / 2;
+		guardar[i] = rem;
 		i++;
+    }
+	for (i = i - 1; i >= 0; i--)
+	{
+		_putchar(guardar[i] + '0');
+		count++;
 	}
-	return (i);
+	return (count);
 }
 
 /**

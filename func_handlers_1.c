@@ -61,6 +61,7 @@ int print_number(int n)
  *
  * Return: binary number
  */
+/*
 char *change_to_binary(unsigned int decimalnum)
 {
     int rem, i = 0;
@@ -76,3 +77,4 @@ char *change_to_binary(unsigned int decimalnum)
     }
     return (ret);
 }
+*/
