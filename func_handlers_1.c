@@ -65,6 +65,7 @@ char *change_to_binary(unsigned int decimalnum)
 {
     int rem, i = 0;
 	char guardar[100];
+	char *ret = guardar;
 
     while (decimalnum != 0)
     {
@@ -73,5 +74,5 @@ char *change_to_binary(unsigned int decimalnum)
 		guardar[i] = rem;
 		i++;
     }
-    return (guardar);
+    return (ret);
 }
