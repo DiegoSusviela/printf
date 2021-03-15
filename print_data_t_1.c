@@ -68,13 +68,13 @@ int print_to_binar(va_list list)
 		return (1);
 	}
 
-    while (decimalnum != 0)
-    {
-        rem = decimalnum % 2;
-        decimalnum = decimalnum / 2;
+	while (decimalnum != 0)
+	{
+		rem = decimalnum % 2;
+		decimalnum = decimalnum / 2;
 		guardar[i] = rem;
 		i++;
-    }
+	}
 	for (i = i - 1; i >= 0; i--)
 	{
 		_putchar(guardar[i] + '0');
