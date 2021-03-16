@@ -17,8 +17,11 @@ int _printf(const char *format, ...);
 void print_str(int pos1, int pos2, const char *format);
 void _puts(char *str);
 int print_number(int n);
-int change_to_binary(unsigned int n);
+char *change_to_binary(unsigned int k);
+
 int print_number_uns(unsigned int n);
+int _strlen(char *s);
+void _print_rev_recursion(char *s);
 
 int print_char(va_list list);
 int print_char_2(va_list list);
@@ -32,22 +35,29 @@ int print_hexa_low(va_list list);
 int print_hexa_upper(va_list list);
 int print_str_non_print(va_list list);
 
-int _strlen(char *);
 int print_str_rev(va_list list);
-int _putchar(char c);
+int print_rot_13(va_list list);
+int print_p(va_list list);
+
+
+int _putchar(char);
 int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
-int print_rot13(va_list list);
 
 /**
- * struct datatype - Typedef for struct
- * @type: first member
- * @func: second member
- */
+ * struct datatype - imprime
+ * @type: numero a imprimir
+ * @func: un char ahi
+ *
+* Description: Show a message blablabla
+* Return: Always 0 (Success)
+*/
+
 typedef struct datatype
 {
 	char *type;
 	int (*func)(va_list list);
 } data_t;
+
 
 #endif

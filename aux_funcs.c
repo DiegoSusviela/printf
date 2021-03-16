@@ -13,6 +13,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+
 /**
  * num_lenght - counts number of digits of a number
  * @n: string to count digits.
@@ -23,6 +24,7 @@ int _putchar(char c)
 int num_lenght(int n)
 {
 	int counter = 1;
+
 	if (n < 0)
 		counter++;
 	while (n / 10 != 0)
@@ -39,10 +41,10 @@ int num_lenght(int n)
  *
  * Return: digit quantity for count.
  */
-
 int num_lenght_uns(unsigned int n)
 {
 	int counter = 1;
+
 	while (n / 10 != 0)
 	{
 		counter++;
@@ -50,3 +52,4 @@ int num_lenght_uns(unsigned int n)
 	}
 	return (counter);
 }
+
