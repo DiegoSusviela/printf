@@ -35,7 +35,6 @@
 
 # aux_funcs.c
 
-
 + int _putchar
 + int num_lenght
 + int num_lenght_uns
