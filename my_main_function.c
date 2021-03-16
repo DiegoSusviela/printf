@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * check_for_specifiers - padsdsr
- * @format: iafassfa
+ * check_for_specifiers - check all specifiers
+ * @format: format
  * @flag: h or l or nothign
  *
  * Return: number of chars and digits printed
@@ -46,8 +46,8 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 }
 
 /**
- * _printf - asdasdng
- * @format: asdasdasction
+ * _printf - printf function
+ * @format: format
  *
  * Return: number of characters printed
  */
