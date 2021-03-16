@@ -31,7 +31,7 @@ int print_octal_l(va_list list)
 {
 	
 }
-*/
+
 int print_hexa_low_l(va_list list)
 {
 
@@ -40,3 +40,4 @@ int print_hexa_upper_l(va_list list)
 {
 
 }
+*/
