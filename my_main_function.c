@@ -57,6 +57,7 @@ int _printf(const char *format, ...)
 			break;
 		iter++;
 	}
+	_putchar(-1);
 	va_end(list);
 	return (count);
 }
