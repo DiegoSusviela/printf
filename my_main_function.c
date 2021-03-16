@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					/*_putchar(format[iter]);*/
 					count++;
-					indx_type--;
+					iter--;
 				}
 				indx_type++;
 			}
