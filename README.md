@@ -42,5 +42,9 @@
 
 <details>
   <summary>:zap: Content of: print_data_t_5_short.c</summary>
-  <h3 align="center" > Do ⭐ my repository if you find my project interesting, at least your star could make someone's day.  </h3>
+  <h3 align="center" > int print_int_h</h3>
+  <h3 align="center" > int print_uns_h</h3>
+  <h3 align="center" > int print_octal_h</h3>
+  <h3 align="center" > int print_hexa_low_h</h3>
+  <h3 align="center" > int print_hexa_upper_h</h3>
 </details>
