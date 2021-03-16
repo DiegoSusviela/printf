@@ -51,7 +51,7 @@ int _printf(const char *format, ...)
 				{
 					_putchar('%');
 					/*_putchar(format[iter]);*/
-					count += 2;
+					count++;
 					indx_type++;
 				}
 				indx_type++;
