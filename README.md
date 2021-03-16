@@ -1,4 +1,4 @@
-## printff
+## printf
 
 
 # func_handlers_1.c contains
@@ -34,4 +34,3 @@
 + int _putchar
 + int num_lenght
 + int num_lenght_uns
-+ 
