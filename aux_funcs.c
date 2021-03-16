@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <unistd.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -10,9 +11,21 @@
 
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
-}
+	static char buf[1024];
+	static int z;
 
+	if (z == -1 || z >= 1024)
+	{
+		write(1, &buf, z);
+		z = 0;
+	}
+	if (z != -1)
+	{
+		buf[z] = c;
+		z++;
+	}
+	return (1);
+}
 
 /**
  * num_lenght - counts number of digits of a number
@@ -52,5 +65,3 @@ int num_lenght_uns(unsigned int n)
 	}
 	return (counter);
 }
-
-
