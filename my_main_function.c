@@ -54,7 +54,7 @@ int _printf(const char *format, ...)
 						count += type[indx_type].func(list);
 					indx_type++;
 				}
-			}
+			/*}*/
 		}
 		else
 			break;
