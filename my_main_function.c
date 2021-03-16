@@ -53,13 +53,13 @@ int _printf(const char *format, ...)
 			{*/
 				indx_type = 0;
 				/*iter++;*/
-				while (type[indx_type + 1].type)
+				while (type[indx_type].type)
 				{
-					if (*type[indx_type + 1].type == format[iter])
+					if (*type[indx_type].type == format[iter + 1])
 					{
-						if (*type[indx_type + 1].type)
+						if (*type[indx_type].type)
 						{
-							count += type[indx_type + 1].func(list);
+							count += type[indx_type].func(list);
 							indx_type+= 2;
 						}
 						break;
