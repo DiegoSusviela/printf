@@ -48,15 +48,16 @@ int _printf(const char *format, ...)
 	va_start(valist, format);
 	while (format[iter])
 	{
-		for (; format[iter] != '%' && format[iter]; iter++)
+		while(format[iter] != '%' && format[iter])
 		{
 			_putchar(format[iter]);
 			count++;
+			iter++;
 		}
 		if (!format[iter])
 			return (count);
 		f = check_for_specifiers(&format[iter + 1]);
-		if (f != NULL)
+		if (f)
 		{
 			count += f(valist);
 			iter += 2;
