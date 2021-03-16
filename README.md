@@ -1,4 +1,4 @@
-## colaboracion del printf
+## del printf
 
 
 # func_handlers_1.c contains
