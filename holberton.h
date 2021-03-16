@@ -49,6 +49,8 @@ int _putchar(char);
 int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
 
+int print_number_uns_l(unsigned long int n);
+
 
 /**
  * struct datatype - imprime
