@@ -64,6 +64,7 @@ int _printf(const char *format, ...)
 						}
 						break;
 					}
+					indx_type++;
 				}
 				if (!format[iter + 1])
 					return (-1);
