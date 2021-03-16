@@ -38,7 +38,7 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 	if (flag == 0)
 		return (type[iter].func);
 	else 
-		if (flag == '1')
+		if (flag == 1)
 			return (type[iter + 1].func);
 		else 
 			return (type[iter + 2].func);
