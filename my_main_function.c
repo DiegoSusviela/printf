@@ -43,6 +43,7 @@ int _printf(const char *format, ...)
 			indx_type = 0;
 			iter++;
 			if (format[1] == ' ' || format[1] == '\0')
+			{
 				if (format[1] != '\0')
 				{
 					count += _putchar('%');
@@ -53,6 +54,7 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					break;
 				}
+			}
 			while (type[indx_type].type)
 			{
 				if (*type[indx_type].type == format[iter])
