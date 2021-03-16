@@ -66,7 +66,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[iter])
 			return (count);
-		if (format[iter + 1] == 'l')
+		if (format[iter + 1] == 'h')
 		{
 			iter++;
 			flag = 1;
