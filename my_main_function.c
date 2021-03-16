@@ -42,19 +42,6 @@ int _printf(const char *format, ...)
 			pos1 = pos2 + 3;
 			indx_type = 0;
 			iter++;
-			if (format[1] == ' ' || format[1] == '\0')
-			{
-				if (format[1] != '\0')
-				{
-					count += _putchar('%');
-					count += _putchar(format[1]);
-				}
-				else
-				{
-					count += _putchar('%');
-					break;
-				}
-			}
 			while (type[indx_type].type)
 			{
 				if (*type[indx_type].type == format[iter])
