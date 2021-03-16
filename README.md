@@ -3,7 +3,6 @@
 
 # func_handlers_1.c contains
 
-
 + void print_str;
 + void _puts;
 + int print_number;
@@ -17,6 +16,7 @@
 
 # prints_data_t_1.c
 
+
 + int print_char;
 + int print_char_2;
 + int print_int;
@@ -24,6 +24,7 @@
 + int print_percent;
 
 # prints_data_t_2;
+
 
 + int print_uns;
 + int print_octal;
