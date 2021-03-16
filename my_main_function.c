@@ -24,15 +24,17 @@ int _printf(const char *format, ...)
 
 	va_list list;
 
-	if (!format)
+	if ((!format) || (format[iter] == '%' && format[iter + 1] == '\0'))
 		return (-1);
 
 	va_start(list, format);
 
 	while (format && format[iter])
 	{
+		/*
 		if (format[iter] == '%' && format[iter + 1] == '\0')
 			return (-1);
+		*/
 		while (format[iter] && format[iter] != '%')
 		{
 			_putchar(format[iter]);
