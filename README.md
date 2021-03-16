@@ -15,7 +15,6 @@
 
 # prints_data_t_1.c
 
-
 + int print_char;
 + int print_char_2;
 + int print_int;
