@@ -39,9 +39,9 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 		return (type[iter].func);
 	else 
 		if (flag == 1)
-			return (type[iter + 1].func);
-		else 
 			return (type[iter + 2].func);
+		else 
+			return (type[iter + 1].func);
 }
 
 /**
