@@ -7,18 +7,15 @@
  * Return: number of chars and digits printed
  */
 
-static int (*check_for_specifiers(int flag, const char *format))(va_list)
+static int (*check_for_specifiers(const char *format))(va_list)
 {
 	unsigned int iter;
 	data_t type[] = {
 		{"c", print_char}, {"s", print_char_2},
-		{"d", print_int}, {"d", print_int_l},
-		{"i", print_int}, {"i", print_int_l},   
+		{"d", print_int}, {"i", print_int},
 		{"b", print_to_binar}, {"%", print_percent},
-		{"u", print_uns}, {"u", print_uns_l},
-		{"o", print_octal}, {"o", print_octal},
-		{"x", print_hexa_low}, {"x", print_hexa_low},
-		{"X", print_hexa_upper}, {"X", print_hexa_upper},
+		{"u", print_uns}, {"o", print_octal},
+		{"x", print_hexa_low}, {"X", print_hexa_upper},
 		{"S", print_str_non_print}, {"r", print_str_rev},
 		{"R", print_rot_13}, {"p", print_p}, {NULL, NULL},
 	};
@@ -30,10 +27,7 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 			break;
 		}
 	}
-	if (flag == 0)
-		return (type[iter].func);
-	else 
-		return (type[iter + 1].func);
+	return (type[iter].func);
 }
 
 /**
@@ -48,7 +42,6 @@ int _printf(const char *format, ...)
 	unsigned int iter = 0, count = 0;
 	va_list valist;
 	int (*f)(va_list);
-	int flag = 0;
 
 	if (format == NULL)
 		return (-1);
@@ -63,15 +56,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[iter])
 			return (count);
-
-		if (format[iter + 1] == 'l')
-		{
-			iter++;
-			flag = 1;
-		}
-		else 
-			flag = 0;
-		f = check_for_specifiers(flag, &format[iter + 1]);
+		f = check_for_specifiers(&format[iter + 1]);
 		if (f)
 		{
 			count += f(valist);

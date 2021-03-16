@@ -26,6 +26,7 @@ int _putchar(char c)
 	return (1);
 }
 
+
 /**
  * num_lenght - counts number of digits of a number
  * @n: string to count digits.
@@ -64,3 +65,4 @@ int num_lenght_uns(unsigned int n)
 	}
 	return (counter);
 }
+
