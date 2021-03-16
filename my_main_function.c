@@ -19,8 +19,9 @@ int _printf(const char *format, ...)
 		{"R", print_rot_13}, {"p", print_p}, {NULL, NULL},
 	};
 
-	int indx_type, iter = 0, count = 0;
+	int indx_type, iter = 0, count = 0, flag;
 	/* int pos1 = 0, pos2; */
+	int (*f)(va_list);
 
 	va_list list;
 
@@ -51,18 +52,31 @@ int _printf(const char *format, ...)
 			else
 			{*/
 				indx_type = 0;
-				iter++;
-				while (type[indx_type].type)
+				/*iter++;*/
+				while (type[indx_type + 1].type)
 				{
-					if (*type[indx_type].type == format[iter])
-						count += type[indx_type].func(list);
-					indx_type++;
+					if (*type[indx_type + 1].type == format[iter])
+					{
+						if (*type[indx_type + 1].type)
+						{
+							count += type[indx_type + 1].func(list);
+							indx_type+= 2;
+						}
+						break;
+					}
 				}
+				if (!format[iter + 1])
+					return (-1);
+				_putchar(format[iter]);
+				count++;
+				if (format[iter + 1] == '%')
+					iter += 2;
+				else
+					iter++;
 			/*}*/
 		}
 		else
 			break;
-		iter++;
 	}
 	va_end(list);
 	return (count);
