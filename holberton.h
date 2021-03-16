@@ -50,6 +50,12 @@ int print_octal_l(va_list list);
 int print_hexa_low_l(va_list list);
 int print_hexa_upper_l(va_list list);
 
+int print_int_h(va_list list);
+int print_uns_h(va_list list);
+int print_octal_h(va_list list);
+int print_hexa_low_h(va_list list);
+int print_hexa_upper_h(va_list list);
+
 int print_number_uns_l(unsigned long int n);
 
 /**
