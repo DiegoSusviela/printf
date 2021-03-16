@@ -19,9 +19,9 @@ int _printf(const char *format, ...)
 		{"R", print_rot_13}, {"p", print_p}, {NULL, NULL},
 	};
 
-	int indx_type, iter = 0, count = 0, flag;
+	int indx_type, iter = 0, count = 0;
 	/* int pos1 = 0, pos2; */
-	int (*f)(va_list);
+	/*int (*f)(va_list);*/
 
 	va_list list;
 
