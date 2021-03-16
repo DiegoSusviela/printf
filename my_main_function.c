@@ -69,9 +69,8 @@ int _printf(const char *format, ...)
 				{
 					_putchar(format[iter]);
 					count++;
+					iter++
 				}
-				if (format[iter + 1] == '%')
-					iter += 2;
 				else
 					iter++;
 			/*}*/
