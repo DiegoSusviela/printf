@@ -58,18 +58,18 @@ int _printf(const char *format, ...)
 					if (*type[indx_type].type == format[iter + 1])
 					{
 						if (*type[indx_type].type)
-						{
 							count += type[indx_type].func(list);
-							indx_type+= 2;
-						}
 						break;
 					}
 					indx_type++;
 				}
 				if (!format[iter + 1])
 					return (-1);
-				_putchar(format[iter]);
-				count++;
+				if (!type[indx_type].type)
+				{
+					_putchar(format[iter]);
+					count++;
+				}
 				if (format[iter + 1] == '%')
 					iter += 2;
 				else
