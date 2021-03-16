@@ -3,6 +3,7 @@
 
 # func_handlers_1.c contains
 
+
 + void print_str;
 + void _puts;
 + int print_number;
@@ -10,6 +11,7 @@
 + int print_number_uns;
 
 # func_handlers_2.c contains
+
 
 + int change_to_octal
 
