@@ -1,5 +1,13 @@
 #include "holberton.h"
 
+/**
+ * print_number_uns_l - prints number
+ * @n: string to count digits.
+ *
+ * Return: digit quantity for count.
+ */
+
+
 int print_number_uns_l(unsigned long int n)
 {
 	unsigned long int num;
