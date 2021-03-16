@@ -44,6 +44,12 @@ int _putchar(char);
 int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
 
+int print_int_l(va_list list);
+int print_uns_l(va_list list);
+int print_octal_l(va_list list);
+int print_hexa_low_l(va_list list);
+int print_hexa_upper_l(va_list list);
+
 /**
  * struct datatype - imprime
  * @type: numero a imprimir
