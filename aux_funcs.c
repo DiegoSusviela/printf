@@ -14,12 +14,12 @@ int _putchar(char c)
 	static char buf[1024];
 	static int z;
 
-	if (z == -1 || z >= 1024)
+	if (c == -1 || z >= 1024)
 	{
 		write(1, &buf, z);
 		z = 0;
 	}
-	if (z != -1)
+	if (c != -1)
 	{
 		buf[z] = c;
 		z++;
