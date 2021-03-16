@@ -48,7 +48,7 @@ int _printf(const char *format, ...)
 	va_start(valist, format);
 	while (format[iter])
 	{
-		while(format[iter] != '%' && format[iter])
+		while (format[iter] != '%' && format[iter])
 		{
 			_putchar(format[iter]);
 			count++;
