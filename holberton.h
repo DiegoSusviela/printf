@@ -39,10 +39,16 @@ int print_str_rev(va_list list);
 int print_rot_13(va_list list);
 int print_p(va_list list);
 
+int print_int_l(va_list list);
+int print_uns_l(va_list list);
+int print_octal_l(va_list list);
+int print_hexa_low_l(va_list list);
+int print_hexa_upper_l(va_list list);
 
 int _putchar(char);
 int num_lenght(int n);
 int num_lenght_uns(unsigned int n);
+
 
 /**
  * struct datatype - imprime
