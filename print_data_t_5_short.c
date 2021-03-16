@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * print_int_h - Prints integrer h
+ *
+ * @list: list
+ * Return: digit quantity for count.
+ */
+
 int print_int_h(va_list list)
 {
 	unsigned int num;
@@ -18,6 +25,13 @@ int print_int_h(va_list list)
 	return (count);
 }
 
+/**
+ * print_uns_h - Prints uns h
+ *
+ * @list: list
+ * Return: digit quantity for count.
+ */
+
 int print_uns_h(va_list list)
 {
 	unsigned int n = va_arg(list, unsigned int);
@@ -26,6 +40,13 @@ int print_uns_h(va_list list)
 	count += print_number_uns_l(n);
 	return (count);
 }
+
+/**
+ * print_octal_h - Prints octal h
+ *
+ * @list: list
+ * Return: digit quantity for count.
+ */
 
 int print_octal_h(va_list list)
 {
@@ -58,6 +79,13 @@ int print_octal_h(va_list list)
 	return (count);
 }
 
+/**
+ * print_hexa_low_h - Prints hexa lower
+ *
+ * @list: list
+ * Return: digit quantity for count.
+ */
+
 int print_hexa_low_h(va_list list)
 {
 	int rem, i = 0, count = 0;
@@ -88,6 +116,13 @@ int print_hexa_low_h(va_list list)
 	}
 	return (count);
 }
+
+/**
+ * print_hexa_upper_h - Prints hexa uppercase
+ *
+ * @list: list
+ * Return: digit quantity for count.
+ */
 
 int print_hexa_upper_h(va_list list)
 {
