@@ -3,6 +3,7 @@
 
 # func_handlers_1.c contains
 
+
 + void print_str;
 + void _puts;
 + int print_number;
