@@ -39,3 +39,8 @@
 + int _putchar
 + int num_lenght
 + int num_lenght_uns
+
+<details>
+  <summary>:zap: Content of: print_data_t_5_short.c</summary>
+  <h3 align="center" > Do ⭐ my repository if you find my project interesting, at least your star could make someone's day.  </h3>
+</details>
