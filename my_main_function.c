@@ -31,6 +31,8 @@ int _printf(const char *format, ...)
 
 	while (format && format[iter])
 	{
+		if (format[iter] == '%' && format[iter + 1] == '\0')
+			return (-1);
 		while (format[iter] && format[iter] != '%')
 		{
 			_putchar(format[iter]);
