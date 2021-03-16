@@ -42,6 +42,8 @@ int _printf(const char *format, ...)
 			pos1 = pos2 + 3;
 			indx_type = 0;
 			iter++;
+			if (format[1] == ' ' || format[1] == '\0')
+				return (NULL);
 			while (type[indx_type].type)
 			{
 				if (*type[indx_type].type == format[iter])
