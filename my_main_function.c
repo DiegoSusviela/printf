@@ -39,13 +39,13 @@ int _printf(const char *format, ...)
 		}		
 		if (format[iter])
 		{
-			if (format[iter] && format[iter + 1] == '\0')
+			/*if (format[iter] && format[iter + 1] == '\0')
 			{
 				_putchar('%');
 				count++;
 			}
 			else
-			{
+			{*/
 				indx_type = 0;
 				iter++;
 				while (type[indx_type].type)
