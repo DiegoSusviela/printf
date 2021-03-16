@@ -88,7 +88,7 @@ int print_p(va_list list)
 	char *str = "(nil)";
 
 	n = va_arg(list, unsigned long);
-	
+
 	if (n == 0)
 	{
 		for (i = 0; str[i]; i++)
