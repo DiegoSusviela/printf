@@ -65,39 +65,27 @@ int _printf(const char *format, ...)
 	while (format[iter])
 	{
 		while (format[iter] != '%' && format[iter])
-		{
-			_putchar(format[iter]);
-			count++;
-			iter++;
-		}
+			_putchar(format[iter]),	count++, iter++;
 		if (!format[iter])
 			return (count);
 		if (format[iter + 1] == 'h')
-		{
-			iter++;
-			flag = 1;
-		}
+			iter++, flag = 1;
 		else
 		{
 			if (format[iter + 1] == 'l')
-			{
-				iter++;
-				flag = 2;
-			}
+				iter++,	flag = 2;
 			else
 				flag = 0;
 		}
 		f = check_for_specifiers(flag, &format[iter + 1]);
 		if (f)
 		{
-			count += f(valist);
-			iter += 2;
+			count += f(valist),	iter += 2;
 			continue;
 		}
 		if (!format[iter + 1])
 			return (-1);
-		_putchar(format[iter]);
-		count++;
+		_putchar(format[iter]), count++;
 		if (format[iter + 1] == '%')
 			iter += 2;
 		else
