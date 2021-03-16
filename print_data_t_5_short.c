@@ -20,7 +20,7 @@ int print_int_h(va_list list)
 
 int print_uns_h(va_list list)
 {
-	int n = va_arg(list, int);
+	unsigned int n = va_arg(list, unsigned int);
 	int count = 0;
 
 	count+= print_number_uns_l(n);
@@ -62,7 +62,7 @@ int print_hexa_low_h(va_list list)
 {
 	int rem, i = 0, count = 0;
 	char hexnum[100];
-	int decnum = va_arg(list, int);
+	unsigned int decnum = va_arg(list, unsigned int);
 
 	if (decnum == 0)
 	{
@@ -93,7 +93,7 @@ int print_hexa_upper_h(va_list list)
 {
 	int rem, i = 0, count = 0;
 	char hexnum[100];
-	int decnum = va_arg(list, int);
+	unsigned int decnum = va_arg(list, unsigned int);
 
 	if (decnum == 0)
 	{
