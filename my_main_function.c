@@ -3,6 +3,7 @@
 /**
  * check_for_specifiers - padsdsr
  * @format: iafassfa
+ * @flag: h or l or nothign
  *
  * Return: number of chars and digits printed
  */
