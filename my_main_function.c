@@ -20,7 +20,8 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 		{"u", print_uns}, {"u", print_uns_l}, {"u", print_uns_h},
 		{"o", print_octal}, {"o", print_octal_l}, {"o", print_octal_h},
 		{"x", print_hexa_low}, {"x", print_hexa_low_l}, {"x", print_hexa_low_h},
-		{"X", print_hexa_upper}, {"X", print_hexa_upper_l}, {"X", print_hexa_upper_h},
+		{"X", print_hexa_upper}, {"X", print_hexa_upper_l},
+		{"X", print_hexa_upper_h},
 		{"S", print_str_non_print},
 		{"r", print_str_rev},
 		{"R", print_rot_13},
@@ -37,11 +38,10 @@ static int (*check_for_specifiers(int flag, const char *format))(va_list)
 	}
 	if (flag == 0)
 		return (type[iter].func);
-	else 
-		if (flag == 1)
-			return (type[iter + 2].func);
-		else 
-			return (type[iter + 1].func);
+	if (flag == 1)
+		return (type[iter + 2].func);
+	else
+		return (type[iter + 1].func);
 }
 
 /**
