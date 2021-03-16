@@ -2,8 +2,8 @@
 
 int print_int_h(va_list list)
 {
-	unsigned int num;
-	int n = va_arg(list, int);
+	unsigned short int num;
+	int short n = va_arg(list, short int);
 	int count = 0;
 
 	if (n < 0)
@@ -12,18 +12,18 @@ int print_int_h(va_list list)
 		num = -n;
 		count++;
 	}
-	else 
+	else
 		num = n;
-	count+= print_number_uns(num);
+	count += print_number_uns(num);
 	return (count);
 }
 
 int print_uns_h(va_list list)
 {
-	unsigned int n = va_arg(list, unsigned int);
+	unsigned short int n = va_arg(list, unsigned short int);
 	int count = 0;
 
-	count+= print_number_uns_l(n);
+	count += print_number_uns_l(n);
 	return (count);
 }
 
@@ -31,7 +31,7 @@ int print_octal_h(va_list list)
 {
 	int i = 0, count = 0;
 	char hexnum[100];
-	int n = va_arg(list, int);
+	int short n = va_arg(list, short int);
 	int m = 1, aux, num = 0;
 
 	if (n == 0)
@@ -62,7 +62,7 @@ int print_hexa_low_h(va_list list)
 {
 	int rem, i = 0, count = 0;
 	char hexnum[100];
-	unsigned int decnum = va_arg(list, unsigned int);
+	unsigned short int decnum = va_arg(list, unsigned short int);
 
 	if (decnum == 0)
 	{
@@ -93,7 +93,7 @@ int print_hexa_upper_h(va_list list)
 {
 	int rem, i = 0, count = 0;
 	char hexnum[100];
-	unsigned int decnum = va_arg(list, unsigned int);
+	unsigned int short decnum = va_arg(list, unsigned short int);
 
 	if (decnum == 0)
 	{
