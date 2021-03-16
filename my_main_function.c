@@ -30,6 +30,8 @@ int _printf(const char *format, ...)
 
 	while (format && format[iter])
 	{
+		if (format[iter] == '%' && !format[iter + 1])
+			return (-1);
 		while (format[iter] && format[iter] != '%')
 			iter++;
 		pos2 = iter - 1;
