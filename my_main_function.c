@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_i - padsdsr
- * @i: iafassfa
+ * check_for_specifiers - padsdsr
+ * @format: iafassfa
  *
  * Return: number of chars and digits printed
  */
