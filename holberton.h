@@ -1,4 +1,3 @@
-
 #ifndef prinf_function
 #define prinf_function
 
