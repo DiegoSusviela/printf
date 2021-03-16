@@ -3,7 +3,7 @@
 int print_int_h(va_list list)
 {
 	unsigned short int num;
-	int short n = va_arg(list, short int);
+	short int n = va_arg(list, short int);
 	int count = 0;
 
 	if (n < 0)
@@ -31,7 +31,7 @@ int print_octal_h(va_list list)
 {
 	int i = 0, count = 0;
 	char hexnum[100];
-	int short n = va_arg(list, short int);
+	short int n = va_arg(list, short int);
 	int m = 1, aux, num = 0;
 
 	if (n == 0)
@@ -93,7 +93,7 @@ int print_hexa_upper_h(va_list list)
 {
 	int rem, i = 0, count = 0;
 	char hexnum[100];
-	unsigned int short decnum = va_arg(list, unsigned short int);
+	unsigned short int decnum = va_arg(list, unsigned short int);
 
 	if (decnum == 0)
 	{

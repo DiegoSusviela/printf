@@ -12,9 +12,9 @@ int print_int_l(va_list list)
 		num = -n;
 		count++;
 	}
-	else 
+	else
 		num = n;
-	count+= print_number_uns(num);
+	count += print_number_uns(num);
 	return (count);
 }
 
@@ -23,7 +23,7 @@ int print_uns_l(va_list list)
 	unsigned long int n = va_arg(list, unsigned long int);
 	int count = 0;
 
-	count+= print_number_uns_l(n);
+	count += print_number_uns_l(n);
 	return (count);
 }
 
