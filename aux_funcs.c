@@ -8,22 +8,28 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(char c)
+int _putchar(char ch)
 {
-	static char buf[1024];
-	static int i;
+	static int contador;
+	static char buffer[1024];
 
-	if (c == -1 || i >= 1024)
+	if (ch == -1)
 	{
-		write(1, &buf, i);
-		i = 0;
+		contador = 0;
+		return (0);
 	}
-	if (c != -1)
+	if (ch == -2 || contador == 1024)
 	{
-		buf[i] = c;
-		i++;
+		write(1, buffer, contador);
+		contador = 0;
 	}
-	return (1);
+	if (ch != -1 && ch != -2)
+	{
+		buffer[contador] = ch;
+		contador++;
+		return (1);
+	}
+	return (0);
 }
 
 
