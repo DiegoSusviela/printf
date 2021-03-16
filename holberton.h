@@ -50,6 +50,8 @@ int print_octal_l(va_list list);
 int print_hexa_low_l(va_list list);
 int print_hexa_upper_l(va_list list);
 
+int print_number_uns_l(unsigned long int n);
+
 /**
  * struct datatype - imprime
  * @type: numero a imprimir
