@@ -47,14 +47,14 @@ int _printf(const char *format, ...)
 			{
 				if (*type[indx_type].type == format[iter])
 					count += type[indx_type].func(list);
-				if (!type[indx_type].type)
-				{
-					_putchar('%');
-					/*_putchar(format[iter]);*/
-					count++;
-					iter--;
-				}
 				indx_type++;
+			}
+			if (!type[indx_type].type)
+			{
+				_putchar('%');
+				/*_putchar(format[iter]);*/
+				count++;
+				iter--;
 			}
 		}
 		else
