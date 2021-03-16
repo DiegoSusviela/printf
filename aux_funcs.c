@@ -13,7 +13,6 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-
 /**
  * num_lenght - counts number of digits of a number
  * @n: string to count digits.
