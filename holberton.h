@@ -59,5 +59,4 @@ typedef struct datatype
 	int (*func)(va_list list);
 } data_t;
 
-
 #endif
