@@ -28,8 +28,6 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	_putchar(-1);
-
 	while (format && format[iter])
 	{
 		while (format[iter] && format[iter] != '%')
