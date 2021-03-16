@@ -39,14 +39,8 @@ int _printf(const char *format, ...)
 			count++;
 			iter++;
 		}
-		/*
-		pos2 = iter - 1;
-		print_str(pos1, pos2, format);
-		count += pos2 - pos1 + 1;
-		*/
 		if (format[iter])
 		{
-			/*pos1 = pos2 + 3;*/
 			indx_type = 0;
 			iter++;
 			while (type[indx_type].type)
@@ -56,8 +50,9 @@ int _printf(const char *format, ...)
 				if (!type[indx_type].type)
 				{
 					_putchar('%');
-					_putchar(format[iter]);
+					/*_putchar(format[iter]);*/
 					count += 2;
+					indx_type++;
 				}
 				indx_type++;
 			}
