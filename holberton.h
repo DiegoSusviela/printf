@@ -12,35 +12,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-/**
- * struct print_buffer - imprime
- * @index: numero a imprimir
- * @size: un char ahi
- * @overflow: adnakd
- * @str: akdnaol
- *
-* Description: Show a message blablabla
-* Return: Always 0 (Success)
-*/
-
-typedef struct print_buffer
-{
-	size_t index;
-	size_t size;
-	size_t overflow;
-	char *str;
-} buffer;
-
-buffer *buf_new();
-buffer *buf_custom(size_t);
-size_t buf_size(buffer *);
-size_t buf_index(buffer *);
-char *buf_content(buffer *);
-void buf_write(buffer *);
-void buf_end(buffer *);
-void buf_wr(buffer *);
-void buf_inc(buffer *);
-
 int _printf(const char *format, ...);
 
 void print_str(int pos1, int pos2, const char *format);
