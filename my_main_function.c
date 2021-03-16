@@ -24,37 +24,36 @@ int _printf(const char *format, ...)
 
 	va_list list;
 
-	if (!format)
-		return (-1);
-
 	va_start(list, format);
+
+	if ((format[iter] == '%' && format[iter + 1] == '\0') || (!format))
+		return (-1);
 
 	while (format && format[iter])
 	{
-		if (format[iter] == '%' && format[iter + 1] == '\0')
-			return (-1);
 		while (format[iter] && format[iter] != '%')
 		{
 			_putchar(format[iter]);
 			count++;
 			iter++;
-		}
+		}		
 		if (format[iter])
 		{
-			indx_type = 0;
-			iter++;
-			while (type[indx_type].type)
-			{
-				if (*type[indx_type].type == format[iter])
-					count += type[indx_type].func(list);
-				indx_type++;
-			}
-			if (!type[indx_type].type)
+			if (format[iter] && format[iter + 1] == '\0')
 			{
 				_putchar('%');
-				/*_putchar(format[iter]);*/
 				count++;
-				iter--;
+			}
+			else
+			{
+				indx_type = 0;
+				iter++;
+				while (type[indx_type].type)
+				{
+					if (*type[indx_type].type == format[iter])
+						count += type[indx_type].func(list);
+					indx_type++;
+				}
 			}
 		}
 		else
