@@ -17,7 +17,7 @@ Write our own printf function.
   <summary>:zap: Content of: func_handlers_1.c</summary>
   <h3 align="left" > void print_str</h3>
   <h3 align="left" > void _puts</h3>
-  <h3 align="left" > int print_number/h3>
+  <h3 align="left" > int print_number</h3>
   <h3 align="left" > int change_to_binary</h3>
   <h3 align="left" > int print_number_uns</h3>
 </details>
@@ -27,7 +27,7 @@ Write our own printf function.
   <summary>:zap: Content of: func_handlers_2.c</summary>
   <h3 align="left" > int print_number_uns</h3>
   <h3 align="left" > int _strlen</h3>
-  <h3 align="left" > void _print_rev_recursion/h3>
+  <h3 align="left" > void _print_rev_recursion</h3>
 </details>
   
 
