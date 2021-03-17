@@ -84,8 +84,7 @@
 </details>
 
 
-<p align="center">
-  <h2 align="center" > Authors</h2>
-  <h3 align="left" > Diego Susviela</h3>
-  <h3 align="left" > Gabriel Ferreira</h3>
-   </p>
+## Authors 
+
+* **Diego Susviela** - [DiegoSusviela](https://github.com/DiegoSusviela)
+* **Gabriel Ferreira** - [elyoguictm](https://github.com/elyoguictm)
