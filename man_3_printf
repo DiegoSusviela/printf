@@ -3,9 +3,78 @@
 .SH NAME
 .B _printf
 .SH SYNOPSIS
-.B #include "holberton.h"
+
+int _printf(const char *format, ...);
 .PP
-int printf(const char *format, ...);
+void print_str(int pos1, int pos2, const char *format);
+.PP
+void _puts(char *str);
+.PP
+int print_number(int n);
+.PP
+char *change_to_binary(unsigned int k);
+.PP
+int print_number_uns(unsigned int n);
+.PP
+int _strlen(char *s);
+.PP
+void _print_rev_recursion(char *s);
+.PP
+int print_char(va_list list);
+.PP
+int print_char_2(va_list list);
+.PP
+int print_int(va_list list);
+.PP
+int print_to_binar(va_list list);
+.PP
+int print_percent(va_list list);
+.PP
+int print_uns(va_list list);
+.PP
+int print_octal(va_list list);
+.PP
+int print_hexa_low(va_list list);
+.PP
+int print_hexa_upper(va_list list);
+.PP
+int print_str_non_print(va_list list);
+.PP
+int print_str_rev(va_list list);
+.PP
+int print_rot_13(va_list list);
+.PP
+int print_p(va_list list);
+.PP
+int _putchar(char);
+.PP
+int num_lenght(int n);
+.PP
+int num_lenght_uns(unsigned int n);
+.PP
+int print_int_l(va_list list);
+.PP
+int print_uns_l(va_list list);
+.PP
+int print_octal_l(va_list list);
+.PP
+int print_hexa_low_l(va_list list);
+.PP
+int print_hexa_upper_l(va_list list);
+.PP
+int print_int_h(va_list list);
+.PP
+int print_uns_h(va_list list);
+.PP
+int print_octal_h(va_list list);
+.PP
+int print_hexa_low_h(va_list list);
+.PP
+int print_hexa_upper_h(va_list list);
+.PP
+int print_number_uns_l(unsigned long int n);
+.PP
+
 .SH DESCRIPTION
 .B _printf "()
 Prints format string specified by user.
@@ -25,32 +94,43 @@ If it's is, then it will call the respective function to format as many argument
 After a '%' is reached in the string, check if the next character is:
 .PP
 .RS
-.B % - Prints a '%' symbol.
+.B %% - Prints a '%' symbol.
 .PP
-.B s - Prints a String specifier.
+.B %s - Prints a String specifier.
 .PP
-.B c - Prints a Character specifier.
+.B %c - Prints a Character specifier.
 .PP
-.B d, i - Prints a integer specifier, (\takes an integer or a decimal).
+.B %d, %i - Prints a integer specifier, (takes an integer or a decimal).
 .PP
-.B b - Prints a binary specifer.
+.B %b - Prints a binary specifer.
 .PP
-.B u - Prints unsigned int specifer.
+.B %u - Prints unsigned int specifer.
 .PP
-.B o - Prints octal specifer.
+.B %o - Prints octal specifer.
 .PP
-.B x - Prints hexadecimal lowercase.
+.B %x - Prints hexadecimal lowercase.
 .PP
-.B X - Prints hexadecimal uppercase.
+.B %X - Prints hexadecimal uppercase.
 .PP
-.B S - Pritns the string (\Non printable characters (0 < ASCII value < 32 or >= 127))
-are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
+.B %S - Pritns the string (Non printable characters (0 < ASCII value < 32 or >= 127))
+are printed this way: x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
 .PP
-.B r - Prints the reversed string.
+.B %r - Prints the reversed string.
 .PP
-.B R - Prints the rot13'ed string.
+.B %R - Prints the rot13'ed string.
 .PP
-.B p - Prints the pointer type data.
+.B %p - Prints the pointer type data.
+.PP
+
+
+.SH EXAMPLES
+.PP
+ _printf("And the number is: %d", 777) prints "And the number is: 777"
+.PP
+ _printf("%s", "World") prints "World"
+.PP
+ _printf("Hello, World\n") prints "Hello, World", followed by a new line
+
 .PP
 .SH RETURN VALUE
 The _printf function returns the number of characters printed (except the null byte used to end strings)
