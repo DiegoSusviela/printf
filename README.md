@@ -65,7 +65,7 @@ Write our own printf function.
 
 <details>
   <summary>:zap: Content of: print_data_t_4_long.c</summary>
-  <h3 align="left" > int print_int_l/h3>
+  <h3 align="left" > int print_int_l</h3>
   <h3 align="left" > int print_uns_l</h3>
   <h3 align="left" > int print_octal_l</h3>
   <h3 align="left" > int print_hexa_low_l</h3>
